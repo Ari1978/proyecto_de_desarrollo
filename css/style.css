@@ -43,6 +43,7 @@
 .titulo a img {
     width: 120px;
 }
+
 .main {
     grid-area: main;
 }
@@ -182,10 +183,8 @@
     border-radius: 50%;
 }
 
-
 /*shows*/
 .shows-grid {
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6 1fr);
@@ -204,12 +203,6 @@
 
 .header-shows {
     grid-area: header-shows;
-}
-
-.h2 {
-    color: tan;
-    font-size: 3rem;
-    margin-top: 200px;
 }
 
 .header-shows img {
@@ -258,7 +251,7 @@
     width: 250px;
 }
 
-.div img:hover{
+.div img:hover {
     height: 300px;
     width: 300px;
 }
@@ -288,13 +281,7 @@
 
 /*Contrataciones*/
 
-
 .contrataciones {
-    background-color: black;
-    height: auto;
-    width: auto;
-    margin: 20px;
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3 1fr);
@@ -306,33 +293,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 40px;
 }
 
 .header-contrata {
     grid-area: header-contrata;
 }
-
-.header-contrata img {
-    width: 150px;
-    border-radius: 50%;
-    margin: 5px;
-}
-
-.header-contrata h1 {
-    color: greenyellow;
-    font-size: 3rem;
-}
-
 .main-contrata {
     grid-area: main-contrata;
-
 }
 
-.main-contrata h2 {
-    color: orangered;
-    margin: 200px;
-    margin-bottom: 50px;
-    text-align: center;
+.main-contrata div h2{
+    margin-top: 200px;
+    color: aqua;
+    font-size: 1.5rem;
 }
 
 .main-contrata form div p {
@@ -354,11 +328,6 @@
 /*nosotros*/
 
 .nos_container {
-    background-color: black;
-    height: auto;
-    width: auto;
-    margin: 20px;
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5 1fr);
@@ -430,11 +399,6 @@
 /*RRHH*/
 
 .rrhh {
-    background-color: black;
-    height: auto;
-    width: auto;
-    margin: 20px;
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3 1fr);
@@ -457,6 +421,7 @@
     border-radius: 50%;
     margin: 5px;
 }
+
 .main-rrhh {
     grid-area: main-rrhh;
 }
@@ -467,7 +432,7 @@
     margin-top: 200px;
 }
 
-.contacto{
+.contacto {
     margin-top: 50px;
     margin-bottom: 200px;
 }
@@ -484,7 +449,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (mmax-width: 768px) {
     /*inicio*/
 
     .container {
@@ -510,10 +475,6 @@
     .texto {
         font-size: 15px;
         margin: 20px;
-    }
-
-    .boton__menu {
-        padding: 6px;
     }
 
     .carrusel img {
@@ -548,9 +509,10 @@
 
 
     .div img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
+
     .div p {
         color: rgb(187, 184, 40);
     }
@@ -562,28 +524,24 @@
 
     /*contrataciones*/
 
-    .header-contrata img {
+    .menu img {
         width: 100px;
     }
 
-    .header-contrata h1 {
-        color: rgb(216, 210, 211);
-        font-size: 30px;
-    }
-
-    .main-contrata h2 {
-        color: rgb(201, 190, 97);
+    .main-contrata div h2{
+        color: rgb(106, 201, 97);
         font-size: 20px;
     }
 
     .main-contrata form div p {
-        color: aquamarine;
+        color: rgb(185, 124, 44);
         font-size: 10px;
     }
 
     .main-contrata div label {
-        color: rgb(15, 93, 238);
+        color: black;
         font-size: 12px;
+        font-weight: 600;
     }
 
 
@@ -644,7 +602,7 @@
 
 
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
     /*inicio*/
 
@@ -662,14 +620,14 @@
             "video"
             "footer";
     }
-   
+
 
     .header img {
         width: 100px;
     }
 
     .main h1 {
-        font-size: 20px;
+        font-size: 16px;
         color: rgb(105, 172, 78);
     }
 
@@ -677,14 +635,18 @@
         padding: 6px;
     }
 
-   
+    .carrusel p {
+        font-size: 20px;
+        text-align: center;
+        margin: 5px;
+    }
 
     .artistas {
         margin-top: 40px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        
+
     }
 
     .artistas img {
@@ -698,21 +660,22 @@
         width: 300px;
         height: 300px;
     }
+
     .centrar-videos button {
         background-color: rgb(172, 170, 209);
         color: rgb(33, 21, 146);
     }
 
-    .footer-link  {
+    .footer-link {
         margin-top: 10px;
         text-align: center;
     }
 
-    .footer-link a{
+    .footer-link a {
         color: rgb(224, 102, 102);
     }
-    
-   
+
+
 
 
     /*shows*/
@@ -749,17 +712,9 @@
 
     /*contrataciones*/
 
-    .header-contrata img {
-        width: 80px;
-    }
-
-    .header-contrata h1 {
-        color: rgb(238, 20, 57);
-        font-size: 20px;
-    }
 
     .main-contrata h2 {
-        color: rgb(68, 59, 148);
+        color: rgb(24, 146, 89);
         font-size: 15px;
     }
 
@@ -774,20 +729,6 @@
     }
 
 
-    /*contrataciones*/
-
-    .menu h1 {
-        color: rgb(118, 199, 93);
-        font-size: 1rem;
-    }
-
-    .main-contrata form div p {
-        color: rgb(183, 167, 226);
-    }
-
-    .main-contrata div label {
-        color: cornflowerblue;
-    }
 
     /*nosotros*/
 
@@ -816,17 +757,13 @@
         margin: 5px;
     }
 
-    .header-rrhh h1 {
-        color: rgba(196, 126, 126, 0.979);
-        font-size: 18px;
-    }
-
     .main-rrhh {
         grid-area: main-rrhh;
     }
-
+    
     .main-rrhh h2 {
-        font-size: 14px;
+        font-size: 18px;
         color: aquamarine;
+        text-align: center;
     }
 }
