@@ -1,0 +1,832 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5 1fr);
+    grid-template-areas:
+        "header header"
+        "main main"
+        "carrusel artistas"
+        "video video"
+        "footer footer";
+    background-image: url(../images/fonfo_de_pantalla.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    grid-area: header;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.whats a img {
+    width: 50px;
+}
+
+.whats a img:hover {
+    width: 70px;
+}
+
+.titulo a img {
+    width: 120px;
+}
+.main {
+    grid-area: main;
+}
+
+.main h1 {
+    color: rgb(211, 229, 230);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color: burlywood;
+    font-weight: 600;
+}
+
+.carrusel {
+    grid-area: carrusel;
+    background-color: rgb(5, 5, 19);
+    width: 410px;
+    height: 350px;
+    text-align: center;
+
+}
+
+.carrusel p {
+    color: burlywood;
+}
+
+.carrusel img {
+    padding: 30px;
+}
+
+.artistas {
+    grid-area: artistas;
+    text-align: right;
+}
+
+.artistas img {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.video {
+    grid-area: video;
+}
+
+.centrar-videos {
+    display: flex;
+    justify-content: center;
+}
+
+.centrar-videos h4 {
+    color: rgb(240, 39, 66);
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.video iframe {
+    width: 500px;
+    height: 600px;
+    margin: 30px;
+}
+
+.centrar-videos button {
+    background-color: rgb(165, 167, 140);
+    color: rgb(219, 228, 101);
+    font-size: 1rem;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 10%;
+}
+
+.centrar-videos button img {
+    width: 150px;
+}
+
+.boton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.centrar-videos button:hover {
+    background-color: rgb(180, 228, 153);
+    color: green;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 80px 0;
+}
+
+.footer-container {
+    width: auto;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-link {
+    padding: 0 55px;
+}
+
+.footer-link h5 {
+    color: white;
+    font-weight: 500;
+    border-bottom: 2px solid cornflowerblue;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-link ul li a:hover {
+    color: green;
+    font-size: 20px;
+}
+
+.footer-link img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.footer-link img:hover {
+    width: 45px;
+    border-radius: 50%;
+}
+
+
+/*shows*/
+.shows-grid {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas:
+        "header-shows"
+        "main-shows"
+        "img-shows"
+        "img-shows2"
+        "img-shows3"
+        "footer-shows";
+    background-image: url(../images/fonfo_de_pantalla.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-shows {
+    grid-area: header-shows;
+}
+
+.h2 {
+    color: tan;
+    font-size: 3rem;
+    margin-top: 200px;
+}
+
+.header-shows img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.main-shows {
+    grid-area: main-shows;
+}
+
+.main-shows h2 {
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.img-shows {
+    grid-area: img-shows;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.img-shows2 {
+    grid-area: img-shows2;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.img-shows3 {
+    grid-area: img-shows3;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.div img {
+    height: 250px;
+    width: 250px;
+}
+
+.div img:hover{
+    height: 300px;
+    width: 300px;
+}
+
+
+.div button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px 2px white;
+    color: red;
+    font-weight: bold;
+}
+
+.div button:hover {
+    color: rgb(33, 116, 13);
+}
+
+.div p {
+    color: crimson;
+}
+
+.footer-shows {
+    grid-area: footer-shows;
+    margin-top: 150px;
+}
+
+/*Contrataciones*/
+
+
+.contrataciones {
+    background-color: black;
+    height: auto;
+    width: auto;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas:
+        "header-contrata"
+        "main-contrata"
+        "footer-contrata";
+    background-image: url(../images/fonfo_de_pantalla.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-contrata {
+    grid-area: header-contrata;
+}
+
+.header-contrata img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.header-contrata h1 {
+    color: greenyellow;
+    font-size: 3rem;
+}
+
+.main-contrata {
+    grid-area: main-contrata;
+
+}
+
+.main-contrata h2 {
+    color: orangered;
+    margin: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main-contrata form div p {
+    color: aquamarine;
+}
+
+.main-contrata div label {
+    color: cornflowerblue;
+}
+
+.main-contrata button {
+    margin-bottom: 150px;
+}
+
+.footer-contrata {
+    grid-area: footer-contrata;
+}
+
+/*nosotros*/
+
+.nos_container {
+    background-color: black;
+    height: auto;
+    width: auto;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5 1fr);
+    grid-template-areas:
+        "nos_header"
+        "mnosotros"
+        "imagen"
+        "parrafo"
+        "nos_footer";
+    background-image: url(../images/fonfo_de_pantalla.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nos_header {
+    grid-area: nos_header;
+}
+
+.nosheader img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+.mnosotros {
+    grid-area: mnosotros;
+}
+
+.mnosotros h2 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    color: blueviolet;
+    font-weight: 700;
+    text-align: center;
+}
+
+.imagen {
+    grid-area: imagen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen img {
+    height: 250px;
+    width: 250px;
+}
+
+.parrafo {
+    grid-area: parrafo;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: black;
+}
+
+.nos_footer {
+    grid-area: nos_footer;
+
+}
+
+/*RRHH*/
+
+.rrhh {
+    background-color: black;
+    height: auto;
+    width: auto;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas:
+        "header-rrhh"
+        "main-rrhh"
+        "footer-rrhh";
+    background-image: url(../images/fonfo_de_pantalla.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-rrhh {
+    grid-area: header-rrhh;
+}
+
+.header-rrhh img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.main-rrhh {
+    grid-area: main-rrhh;
+}
+
+.main-rrhh h2 {
+    font-size: 25px;
+    color: aquamarine;
+    margin-top: 200px;
+}
+
+.contacto{
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.contacto input {
+    display: block;
+    margin: 10px;
+
+}
+
+.footer-rrhh {
+    grid-area: footer-rrhh;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    /*inicio*/
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5 1fr);
+        grid-template-areas:
+            "header header"
+            "main main"
+            "carrusel artistas"
+            "video video"
+            "footer footer";
+    }
+
+    .header img {
+        width: 100px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+        color: brown;
+    }
+
+    .texto {
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .boton__menu {
+        padding: 6px;
+    }
+
+    .carrusel img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .artistas img {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+    }
+
+    .video button {
+        margin-top: 30px;
+    }
+
+    .video button img {
+        width: 80px;
+
+    }
+
+
+
+    /*shows*/
+
+    .header-shows h2 {
+        color: rgb(116, 108, 219);
+        font-size: 2rem;
+    }
+
+
+    .div img {
+        width: 150px;
+        height: 150px;
+    }
+    .div p {
+        color: rgb(187, 184, 40);
+    }
+
+    .footer_estilo h4 {
+        padding: 10px;
+        color: aquamarine;
+    }
+
+    /*contrataciones*/
+
+    .header-contrata img {
+        width: 100px;
+    }
+
+    .header-contrata h1 {
+        color: rgb(216, 210, 211);
+        font-size: 30px;
+    }
+
+    .main-contrata h2 {
+        color: rgb(201, 190, 97);
+        font-size: 20px;
+    }
+
+    .main-contrata form div p {
+        color: aquamarine;
+        font-size: 10px;
+    }
+
+    .main-contrata div label {
+        color: rgb(15, 93, 238);
+        font-size: 12px;
+    }
+
+
+    /*nosotros*/
+
+    .nosheader img {
+        width: 100px;
+    }
+
+
+    .mnosotros {
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+
+    .imagen img {
+        height: 200px;
+        width: 180px;
+        text-align: center;
+    }
+
+    .parrafo {
+        grid-area: parrafo;
+        color: white;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .nos_footer {
+        text-align: center;
+        padding: 40px;
+        background-color: rgb(15, 12, 26);
+        margin-top: 30px;
+    }
+
+    /*RRHH*/
+
+    .header-rrhh img {
+        width: 100px;
+    }
+
+    .header-rrhh h1 {
+        color: rgb(166, 137, 245);
+    }
+
+    .main-rrhh h2 {
+        font-size: 20px;
+        color: rgb(153, 70, 70);
+    }
+
+
+    .footer-rrhh {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    /*inicio*/
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9 1fr);
+        grid-template-areas:
+            "header"
+            "main"
+            "carrusel"
+            "artistas"
+            "artistas"
+            "artistas"
+            "artistas"
+            "video"
+            "footer";
+    }
+   
+
+    .header img {
+        width: 100px;
+    }
+
+    .main h1 {
+        font-size: 20px;
+        color: rgb(105, 172, 78);
+    }
+
+    .boton__menu {
+        padding: 6px;
+    }
+
+   
+
+    .artistas {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+
+    .artistas img {
+        height: 250px;
+        width: 250px;
+        margin: 15px;
+
+    }
+
+    .video iframe {
+        width: 300px;
+        height: 300px;
+    }
+    .centrar-videos button {
+        background-color: rgb(172, 170, 209);
+        color: rgb(33, 21, 146);
+    }
+
+    .footer-link  {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .footer-link a{
+        color: rgb(224, 102, 102);
+    }
+    
+   
+
+
+    /*shows*/
+
+    .shows-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas:
+            "header-shows"
+            "main-shows"
+            "img-shows"
+            "img-shows2"
+            "img-shows3"
+            "footer-shows";
+    }
+
+    .header-shows h2 {
+        color: rgb(73, 82, 221);
+        font-size: 2rem;
+    }
+
+
+    .div img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .div p {
+        color: rgb(187, 184, 40);
+    }
+
+
+
+    /*contrataciones*/
+
+    .header-contrata img {
+        width: 80px;
+    }
+
+    .header-contrata h1 {
+        color: rgb(238, 20, 57);
+        font-size: 20px;
+    }
+
+    .main-contrata h2 {
+        color: rgb(68, 59, 148);
+        font-size: 15px;
+    }
+
+    .main-contrata form div p {
+        color: aquamarine;
+        font-size: 10px;
+    }
+
+    .main-contrata div label {
+        color: rgb(196, 230, 73);
+        font-size: 12px;
+    }
+
+
+    /*contrataciones*/
+
+    .menu h1 {
+        color: rgb(118, 199, 93);
+        font-size: 1rem;
+    }
+
+    .main-contrata form div p {
+        color: rgb(183, 167, 226);
+    }
+
+    .main-contrata div label {
+        color: cornflowerblue;
+    }
+
+    /*nosotros*/
+
+    .imagen img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .mnosotros h2 {
+        font-size: 2rem;
+    }
+
+
+    .parrafo p {
+        color: rgb(153, 230, 150);
+        text-align: center;
+        font-size: 11px;
+    }
+
+
+
+    /*RRHH*/
+    .header-rrhh img {
+        width: 80px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+
+    .header-rrhh h1 {
+        color: rgba(196, 126, 126, 0.979);
+        font-size: 18px;
+    }
+
+    .main-rrhh {
+        grid-area: main-rrhh;
+    }
+
+    .main-rrhh h2 {
+        font-size: 14px;
+        color: aquamarine;
+    }
+}
