@@ -1,769 +1,808 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*tipografia local*/
+@font-face {
+  font-family: Barber-Outline;
+  src: url(../typo/Barber-Outline.otf);
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5 1fr);
-    grid-template-areas:
-        "header header"
-        "main main"
-        "carrusel artistas"
-        "video video"
-        "footer footer";
-    background-image: url(../images/fonfo_de_pantalla.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6 1fr);
+  grid-template-areas:
+    "header header"
+    "main main"
+    "carrusel carrusel"
+    "artistas artistas"
+    "video video"
+    "footer footer";
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to top, rgb(3, 3, 3), rgb(2, 6, 248));
 }
 
 .whats a img {
-    width: 50px;
+  width: 40px;
+  margin-left: 10px;
 }
 
 .whats a img:hover {
-    width: 70px;
+  transform: scale(1.5, 1.5);
 }
 
 .titulo a img {
-    width: 120px;
+  width: 150px;
 }
 
 .main {
-    grid-area: main;
+  grid-area: main;
 }
 
 .main h1 {
-    color: rgb(211, 229, 230);
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 50px;
-    color: burlywood;
-    font-weight: 600;
+  color: rgb(211, 229, 230);
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 350px;
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-family: Barber-Outline;
 }
 
 .carrusel {
-    grid-area: carrusel;
-    background-color: rgb(5, 5, 19);
-    width: 410px;
-    height: 350px;
-    text-align: center;
-
+  grid-area: carrusel;
 }
 
 .carrusel p {
-    color: burlywood;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(223, 163, 218);
+  padding: 10px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  background: linear-gradient(to top, rgb(46, 46, 97), rgb(47, 97, 40));
+  transition: all 2s;
 }
 
-.carrusel img {
-    padding: 30px;
+.carrusel p:hover {
+  color: black;
+  transform: scale3d(1.5, 1.5, 1);
+  background: linear-gradient(to top, rgb(230, 11, 11), rgb(204, 197, 135));
 }
 
 .artistas {
-    grid-area: artistas;
-    text-align: right;
+  grid-area: artistas;
+}
+
+.artistas div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  color: rgb(145, 122, 122);
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: underline;
 }
 
 .artistas img {
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 50%;
 }
 
 .video {
-    grid-area: video;
+  grid-area: video;
 }
 
-.centrar-videos {
-    display: flex;
-    justify-content: center;
+.centrar-videos{
+  display: flex;
+  flex-direction: column;
 }
-
+.video1{
+  text-align: center;
+}
+.video2{
+  text-align: center;
+}
 .centrar-videos h4 {
-    color: rgb(240, 39, 66);
-    text-align: center;
-    font-weight: 800;
-    padding-bottom: 10px;
-    margin-top: 30px;
+  color: rgb(240, 39, 66);
+  text-align: center;
+  font-weight: 800;
+  padding-bottom: 10px;
+  margin-top: 30px;
 }
 
 .video iframe {
-    width: 500px;
-    height: 600px;
-    margin: 30px;
+  width: 500px;
+  height: 600px;
+  margin: 30px;
 }
 
 .centrar-videos button {
-    background-color: rgb(165, 167, 140);
-    color: rgb(219, 228, 101);
-    font-size: 1rem;
-    padding: 10px;
-    box-shadow: 2px 2px 2px 2px;
-    border-radius: 10%;
+  background-color: rgb(13, 14, 13);
+  color: rgb(78, 78, 74);
+  font-size: 1rem;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px;
+  border-radius: 10%;
 }
 
 .centrar-videos button img {
-    width: 150px;
+  width: 150px;
 }
 
 .boton {
-    text-align: center;
-    margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .centrar-videos button:hover {
-    background-color: rgb(180, 228, 153);
-    color: green;
-    border: 2px solid black;
-    box-shadow: 2px 2px 2px 2px;
+  background-color: rgb(180, 228, 153);
+  color: green;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px 2px;
 }
 
 .footer {
-    grid-area: footer;
-    padding: 80px 0;
+  grid-area: footer;
 }
 
 .footer-container {
-    width: auto;
-    margin: 0 auto;
+  margin-top: 50px;
 }
 
-.footer-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+hr {
+  color: aliceblue;
 }
 
-.footer-link {
-    padding: 0 55px;
+.redes img {
+  width: 30px;
+  margin-top: 10px;
 }
 
-.footer-link h5 {
-    color: white;
-    font-weight: 500;
-    border-bottom: 2px solid cornflowerblue;
-    padding-bottom: 10px;
-    display: inline-block;
+.redes {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px;
 }
 
-.footer-link ul li a {
-    text-decoration: none;
-    font-size: 15px;
+.redes h5 {
+  color: white;
+  margin-top: 10px;
 }
 
-.footer-link ul li a:hover {
-    color: green;
-    font-size: 20px;
+.text {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.footer-link img {
-    width: 35px;
-    border-radius: 50%;
+.link {
+  display: flex;
+  gap: 40px;
+  align-content: center;
 }
 
-.footer-link img:hover {
-    width: 45px;
-    border-radius: 50%;
+.link a {
+  text-decoration: none;
+  align-content: center;
+}
+
+.gif img {
+  width: 200px;
+}
+
+.email {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.email a {
+  text-decoration: none;
+  padding: 5px;
+  color: antiquewhite;
+  font-weight: 800;
+}
+
+button {
+  background-color: rgb(17, 68, 24);
+}
+
+.footer-p {
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: rgb(99, 95, 95);
 }
 
 /*shows*/
 .shows-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6 1fr);
-    grid-template-areas:
-        "header-shows"
-        "main-shows"
-        "img-shows"
-        "img-shows2"
-        "img-shows3"
-        "footer-shows";
-    background-image: url(../images/fonfo_de_pantalla.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6 1fr);
+  grid-template-areas:
+    "header-shows"
+    "main-shows"
+    "img-shows"
+    "img-shows2"
+    "img-shows3"
+    "footer-shows";
+    background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .header-shows {
-    grid-area: header-shows;
-}
-
-.header-shows img {
-    width: 150px;
-    border-radius: 50%;
-    margin: 5px;
+  grid-area: header-shows;
 }
 
 .main-shows {
-    grid-area: main-shows;
+  grid-area: main-shows;
 }
 
 .main-shows h2 {
-    color: white;
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 300px;
+  margin-bottom: 100px;
 }
 
 .img-shows {
-    grid-area: img-shows;
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
+  grid-area: img-shows;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
 }
 
 .img-shows2 {
-    grid-area: img-shows2;
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
+  grid-area: img-shows2;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
 }
 
 .img-shows3 {
-    grid-area: img-shows3;
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
+  grid-area: img-shows3;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
 }
 
 .div img {
-    height: 250px;
-    width: 250px;
+  height: 300px;
+  width: 300px;
+  border-radius: 20%;
 }
 
 .div img:hover {
-    height: 300px;
-    width: 300px;
+  height: 300px;
+  width: 300px;
 }
 
-
 .div button {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10%;
-    box-shadow: 2px 2px 2px 2px white;
-    color: red;
-    font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px 2px white;
+  color: red;
+  font-weight: bold;
 }
 
 .div button:hover {
-    color: rgb(33, 116, 13);
+  color: rgb(33, 116, 13);
 }
 
 .div p {
-    color: crimson;
+  color: crimson;
 }
 
 .footer-shows {
-    grid-area: footer-shows;
-    margin-top: 150px;
+  grid-area: footer-shows;
+  margin-top: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /*Contrataciones*/
 
 .contrataciones {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3 1fr);
-    grid-template-areas:
-        "header-contrata"
-        "main-contrata"
-        "footer-contrata";
-    background-image: url(../images/fonfo_de_pantalla.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 1fr);
+  grid-template-areas:
+    "header-contrata"
+    "main-contrata"
+    "footer-contrata";
+    background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .header-contrata {
-    grid-area: header-contrata;
-}
-.main-contrata {
-    grid-area: main-contrata;
+  grid-area: header-contrata;
 }
 
-.main-contrata div h2{
-    margin-top: 200px;
-    color: aqua;
-    font-size: 1.5rem;
+.main-contrata {
+  grid-area: main-contrata;
+}
+
+.main-contrata div h2 {
+  margin-top: 200px;
+  color: aqua;
+  font-size: 1.5rem;
+}
+.main-contrata div{
+  width: 90%;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .main-contrata form div p {
-    color: aquamarine;
+  color: aquamarine;
 }
 
 .main-contrata div label {
-    color: cornflowerblue;
+  color: cornflowerblue;
 }
 
 .main-contrata button {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 .footer-contrata {
-    grid-area: footer-contrata;
+  grid-area: footer-contrata;
 }
 
 /*nosotros*/
 
 .nos_container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5 1fr);
-    grid-template-areas:
-        "nos_header"
-        "mnosotros"
-        "imagen"
-        "parrafo"
-        "nos_footer";
-    background-image: url(../images/fonfo_de_pantalla.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5 1fr);
+  grid-template-areas:
+    "nos_header"
+    "mnosotros"
+    "imagen"
+    "parrafo"
+    "nos_footer";
+    background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .nos_header {
-    grid-area: nos_header;
+  grid-area: nos_header;
 }
 
 .nosheader img {
-    width: 150px;
-    border-radius: 50%;
-    margin: 5px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 5px;
 }
 
-
 .mnosotros {
-    grid-area: mnosotros;
+  grid-area: mnosotros;
 }
 
 .mnosotros h2 {
-    margin-top: 150px;
-    margin-bottom: 50px;
-    color: blueviolet;
-    font-weight: 700;
-    text-align: center;
+  margin-top: 250px;
+  margin-bottom: 50px;
+  color: rgb(92, 68, 156);
+  font-weight: 700;
+  text-align: center;
 }
 
 .imagen {
-    grid-area: imagen;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  grid-area: imagen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imagen img {
-    height: 250px;
-    width: 250px;
+  height: 250px;
+  width: 250px;
 }
 
 .parrafo {
-    grid-area: parrafo;
-    color: white;
-    margin-top: 60px;
-    margin-bottom: 80px;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-align: justify;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: black;
+  grid-area: parrafo;
+  padding: 30px;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  background: radial-gradient(circle, rgb(12, 12, 12), rgb(1, 54, 13), rgb(77, 5, 5));
 }
 
 .nos_footer {
-    grid-area: nos_footer;
-
+  grid-area: nos_footer;
 }
 
 /*RRHH*/
 
 .rrhh {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3 1fr);
-    grid-template-areas:
-        "header-rrhh"
-        "main-rrhh"
-        "footer-rrhh";
-    background-image: url(../images/fonfo_de_pantalla.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 1fr);
+  grid-template-areas:
+    "header-rrhh"
+    "main-rrhh"
+    "footer-rrhh";
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .header-rrhh {
-    grid-area: header-rrhh;
+  grid-area: header-rrhh;
 }
 
 .header-rrhh img {
-    width: 150px;
-    border-radius: 50%;
-    margin: 5px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 5px;
 }
 
 .main-rrhh {
-    grid-area: main-rrhh;
+  grid-area: main-rrhh;
 }
 
 .main-rrhh h2 {
-    font-size: 25px;
-    color: aquamarine;
-    margin-top: 200px;
+  font-size: 25px;
+  color: rgb(156, 85, 85);
+  margin-top: 200px;
+  font-weight: 700;
 }
 
 .contacto {
-    margin-top: 50px;
-    margin-bottom: 200px;
+  margin-top: 50px;
+  margin-bottom: 200px;
 }
 
-.contacto input {
-    display: block;
-    margin: 10px;
+.contacto {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+.campo{
+  width: 350px;
+margin-bottom: 30px;
+}
+.sexo{
+  margin-bottom: 30px;
+}
+.sexo input{
+  padding: 5px;
+  margin-right: 5px;
+}
+.reset input{
+  padding: 5px;
+  margin-right: 20px;
+}
 
+.campo input {
+  width: 400px;
+}
+h5{
+  color: white;
 }
 
 .footer-rrhh {
-    grid-area: footer-rrhh;
+  grid-area: footer-rrhh;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /*inicio*/
+  .main h1 {
+    font-size: 24px;
+  }
+
+  .artistas img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer-container h5 {
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .gif img {
+    width: 125px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  /*shows*/
+
+  .header-shows h2 {
+    color: rgb(121, 219, 108);
+    font-size: 2rem;
+  }
+
+  .div img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .div p {
+    color: rgb(187, 184, 40);
+  }
+
+  .footer_estilo h4 {
+    padding: 10px;
+    color: aquamarine;
+  }
+
+  /*contrataciones*/
+
+  .menu img {
+    width: 100px;
+  }
+
+  .main-contrata div h2 {
+    color: rgb(106, 201, 97);
+    font-size: 20px;
+  }
+
+  .main-contrata form div p {
+    color: rgb(185, 124, 44);
+    font-size: 10px;
+  }
+
+  .main-contrata div label {
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  /*nosotros*/
+
+  .nosheader img {
+    width: 100px;
+  }
+
+  .mnosotros {
+    color: white;
     text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+
+  .imagen img {
+    height: 200px;
+    width: 180px;
+    text-align: center;
+  }
+
+  .parrafo {
+    grid-area: parrafo;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+  }
+  .imagen img {
+    height: 250px;
+    width: 250px;
+  }
+  
+  
+.footer-p{
+  font-size: 10px;
 }
+ 
 
+  /*RRHH*/
 
-@media only screen and (mmax-width: 768px) {
-    /*inicio*/
+  .header-rrhh img {
+    width: 100px;
+  }
 
-    .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5 1fr);
-        grid-template-areas:
-            "header header"
-            "main main"
-            "carrusel artistas"
-            "video video"
-            "footer footer";
-    }
+  .header-rrhh h1 {
+    color: rgb(166, 137, 245);
+  }
 
-    .header img {
-        width: 100px;
-    }
+  .main-rrhh h2 {
+    font-size: 20px;
+    color: rgb(153, 70, 70);
+  }
 
-    .header h1 {
-        font-size: 25px;
-        color: brown;
-    }
-
-    .texto {
-        font-size: 15px;
-        margin: 20px;
-    }
-
-    .carrusel img {
-        width: 250px;
-        height: 250px;
-    }
-
-
-    .artistas img {
-        height: 100px;
-        width: 100px;
-        margin: 10px;
-    }
-
-    .video button {
-        margin-top: 30px;
-    }
-
-    .video button img {
-        width: 80px;
-
-    }
-
-
-
-    /*shows*/
-
-    .header-shows h2 {
-        color: rgb(116, 108, 219);
-        font-size: 2rem;
-    }
-
-
-    .div img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .div p {
-        color: rgb(187, 184, 40);
-    }
-
-    .footer_estilo h4 {
-        padding: 10px;
-        color: aquamarine;
-    }
-
-    /*contrataciones*/
-
-    .menu img {
-        width: 100px;
-    }
-
-    .main-contrata div h2{
-        color: rgb(106, 201, 97);
-        font-size: 20px;
-    }
-
-    .main-contrata form div p {
-        color: rgb(185, 124, 44);
-        font-size: 10px;
-    }
-
-    .main-contrata div label {
-        color: black;
-        font-size: 12px;
-        font-weight: 600;
-    }
-
-
-    /*nosotros*/
-
-    .nosheader img {
-        width: 100px;
-    }
-
-
-    .mnosotros {
-        color: white;
-        text-align: center;
-        padding: 20px;
-        font-size: 1.5rem;
-    }
-
-    .imagen img {
-        height: 200px;
-        width: 180px;
-        text-align: center;
-    }
-
-    .parrafo {
-        grid-area: parrafo;
-        color: white;
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .nos_footer {
-        text-align: center;
-        padding: 40px;
-        background-color: rgb(15, 12, 26);
-        margin-top: 30px;
-    }
-
-    /*RRHH*/
-
-    .header-rrhh img {
-        width: 100px;
-    }
-
-    .header-rrhh h1 {
-        color: rgb(166, 137, 245);
-    }
-
-    .main-rrhh h2 {
-        font-size: 20px;
-        color: rgb(153, 70, 70);
-    }
-
-
-    .footer-rrhh {
-        font-size: 14px;
-    }
+  .footer-rrhh {
+    font-size: 14px;
+  }
 }
-
-
 
 @media only screen and (max-width: 480px) {
+  /*inicio*/
 
-    /*inicio*/
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas:
+      "header"
+      "main"
+      "carrusel"
+      "artistas"
+      "video"
+      "footer";
+  }
+  .titulo a img {
+    width: 100px;
+  }
+  .carrusel p {
+    font-size: 20px;
+  }
 
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9 1fr);
-        grid-template-areas:
-            "header"
-            "main"
-            "carrusel"
-            "artistas"
-            "artistas"
-            "artistas"
-            "artistas"
-            "video"
-            "footer";
-    }
+.main h1{
+  font-size: 15px;
+  text-align: center;
+}
 
+.video iframe {
+  width: 300px;
+  height: 400px;
+}
 
-    .header img {
-        width: 100px;
-    }
+.centrar-videos button {
+  font-size: 0.5rem;
+}
 
-    .main h1 {
-        font-size: 16px;
-        color: rgb(105, 172, 78);
-    }
+.centrar-videos button img {
+  width: 100px;
+}
 
-    .boton__menu {
-        padding: 6px;
-    }
+.redes img {
+  width: 25px;
+  margin-top: 10px;
+}
 
-    .carrusel p {
-        font-size: 20px;
-        text-align: center;
-        margin: 5px;
-    }
+.redes {
+  padding: 5px;
+}
 
-    .artistas {
-        margin-top: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+button {
+  background-color: rgb(26, 8, 124);
+}
 
-    }
+.footer-p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+  
+  .centrar-videos button {
+    background-color: rgb(172, 170, 209);
+    color: rgb(33, 21, 146);
+  }
+  .centrar-videos h2{
+    font-size: 15px;
+  }
+  .text{ 
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+  }
+  .redes{
+    display: flex;
+  }
+.redes h5{
+  font-size: 12px;
+}
 
-    .artistas img {
-        height: 250px;
-        width: 250px;
-        margin: 15px;
+  /*shows*/
 
-    }
+  .shows-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas:
+      "header-shows"
+      "main-shows"
+      "img-shows"
+      "img-shows2"
+      "img-shows3"
+      "footer-shows";
+  }
 
-    .video iframe {
-        width: 300px;
-        height: 300px;
-    }
+  .header-shows h2 {
+    color: rgb(73, 82, 221);
+    font-size: 2rem;
+  }
 
-    .centrar-videos button {
-        background-color: rgb(172, 170, 209);
-        color: rgb(33, 21, 146);
-    }
+  .div img {
+    width: 100px;
+    height: 100px;
+  }
 
-    .footer-link {
-        margin-top: 10px;
-        text-align: center;
-    }
+  .div p {
+    color: rgb(187, 184, 40);
+  }
 
-    .footer-link a {
-        color: rgb(224, 102, 102);
-    }
+  /*contrataciones*/
 
+  .main-contrata h2 {
+    color: rgb(24, 146, 89);
+    font-size: 15px;
+  }
 
+  .main-contrata form div p {
+    color: aquamarine;
+    font-size: 10px;
+  }
 
+  .main-contrata div label {
+    color: rgb(196, 230, 73);
+    font-size: 12px;
+  }
 
-    /*shows*/
-
-    .shows-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6 1fr);
-        grid-template-areas:
-            "header-shows"
-            "main-shows"
-            "img-shows"
-            "img-shows2"
-            "img-shows3"
-            "footer-shows";
-    }
-
-    .header-shows h2 {
-        color: rgb(73, 82, 221);
-        font-size: 2rem;
-    }
-
-
-    .div img {
-        width: 100px;
-        height: 100px;
-    }
-
-
-    .div p {
-        color: rgb(187, 184, 40);
-    }
-
-
-
-    /*contrataciones*/
-
-
-    .main-contrata h2 {
-        color: rgb(24, 146, 89);
-        font-size: 15px;
-    }
-
-    .main-contrata form div p {
-        color: aquamarine;
-        font-size: 10px;
-    }
-
-    .main-contrata div label {
-        color: rgb(196, 230, 73);
-        font-size: 12px;
-    }
-
+  /*nosotros*/
 
 
-    /*nosotros*/
-
-    .imagen img {
-        width: 140px;
-        height: 140px;
-    }
-
-    .mnosotros h2 {
-        font-size: 2rem;
-    }
-
-
-    .parrafo p {
-        color: rgb(153, 230, 150);
-        text-align: center;
-        font-size: 11px;
-    }
-
-
-
-    /*RRHH*/
-    .header-rrhh img {
-        width: 80px;
-        border-radius: 50%;
-        margin: 5px;
-    }
-
-    .main-rrhh {
-        grid-area: main-rrhh;
-    }
+  .imagen img{
+    width: 150px;
+    height: 150px;
     
-    .main-rrhh h2 {
-        font-size: 18px;
-        color: aquamarine;
-        text-align: center;
-    }
+  }
+
+
+
+  .parrafo p {
+    color: rgb(153, 230, 150);
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .parrafo {
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  /*RRHH*/
+  .header-rrhh img {
+    width: 80px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+  .main-rrhh {
+    grid-area: main-rrhh;
+  }
+
+  .main-rrhh h2 {
+    font-size: 18px;
+    color: aquamarine;
+    text-align: center;
+  }
 }

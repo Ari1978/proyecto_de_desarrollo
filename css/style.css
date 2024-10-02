@@ -4,15 +4,17 @@
   box-sizing: border-box;
 }
 
+/*tipografia local*/
+@font-face {
+  font-family: Barber-Outline;
+  src: url(../typo/Barber-Outline.otf);
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5 1fr);
-  grid-template-areas: "header header" "main main" "carrusel artistas" "video video" "footer footer";
-  background-image: url(../images/fonfo_de_pantalla.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  grid-template-rows: repeat(6 1fr);
+  grid-template-areas: "header header" "main main" "carrusel carrusel" "artistas artistas" "video video" "footer footer";
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .header {
@@ -24,19 +26,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
+  background: linear-gradient(to top, rgb(3, 3, 3), rgb(2, 6, 248));
 }
 
 .whats a img {
-  width: 50px;
+  width: 40px;
+  margin-left: 10px;
 }
 
 .whats a img:hover {
-  width: 70px;
+  transform: scale(1.5, 1.5);
 }
 
 .titulo a img {
-  width: 120px;
+  width: 150px;
 }
 
 .main {
@@ -47,36 +50,58 @@
   color: rgb(211, 229, 230);
   font-size: 2rem;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 350px;
   margin-bottom: 50px;
-  color: burlywood;
-  font-weight: 600;
+  font-weight: 800;
+  font-family: Barber-Outline;
 }
 
 .carrusel {
   grid-area: carrusel;
-  background-color: rgb(5, 5, 19);
-  width: 410px;
-  height: 350px;
-  text-align: center;
 }
 
 .carrusel p {
-  color: burlywood;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(223, 163, 218);
+  padding: 10px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  background: linear-gradient(to top, rgb(46, 46, 97), rgb(47, 97, 40));
+  transition: all 2s;
 }
 
-.carrusel img {
-  padding: 30px;
+.carrusel p:hover {
+  color: black;
+  transform: scale3d(1.5, 1.5, 1);
+  background: linear-gradient(to top, rgb(230, 11, 11), rgb(204, 197, 135));
 }
 
 .artistas {
   grid-area: artistas;
-  text-align: right;
+}
+
+.artistas div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  color: rgb(145, 122, 122);
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: underline;
 }
 
 .artistas img {
-  height: 200px;
-  width: 200px;
+  width: 400px;
+  height: 400px;
   margin: 10px;
   border-radius: 50%;
 }
@@ -87,7 +112,15 @@
 
 .centrar-videos {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.video1 {
+  text-align: center;
+}
+
+.video2 {
+  text-align: center;
 }
 
 .centrar-videos h4 {
@@ -105,8 +138,8 @@
 }
 
 .centrar-videos button {
-  background-color: rgb(165, 167, 140);
-  color: rgb(219, 228, 101);
+  background-color: rgb(13, 14, 13);
+  color: rgb(78, 78, 74);
   font-size: 1rem;
   padding: 10px;
   box-shadow: 2px 2px 2px 2px;
@@ -131,50 +164,75 @@
 
 .footer {
   grid-area: footer;
-  padding: 80px 0;
 }
 
 .footer-container {
-  width: auto;
-  margin: 0 auto;
+  margin-top: 50px;
 }
 
-.footer-row {
+hr {
+  color: aliceblue;
+}
+
+.redes img {
+  width: 30px;
+  margin-top: 10px;
+}
+
+.redes {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px;
 }
 
-.footer-link {
-  padding: 0 55px;
-}
-
-.footer-link h5 {
+.redes h5 {
   color: white;
-  font-weight: 500;
-  border-bottom: 2px solid cornflowerblue;
-  padding-bottom: 10px;
-  display: inline-block;
+  margin-top: 10px;
 }
 
-.footer-link ul li a {
+.text {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  display: flex;
+  gap: 40px;
+  align-content: center;
+}
+
+.link a {
   text-decoration: none;
-  font-size: 15px;
+  align-content: center;
 }
 
-.footer-link ul li a:hover {
-  color: green;
-  font-size: 20px;
+.gif img {
+  width: 200px;
 }
 
-.footer-link img {
-  width: 35px;
-  border-radius: 50%;
+.email {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.footer-link img:hover {
-  width: 45px;
-  border-radius: 50%;
+.email a {
+  text-decoration: none;
+  padding: 5px;
+  color: antiquewhite;
+  font-weight: 800;
+}
+
+button {
+  background-color: rgb(17, 68, 24);
+}
+
+.footer-p {
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: rgb(99, 95, 95);
 }
 
 /*shows*/
@@ -183,20 +241,11 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6 1fr);
   grid-template-areas: "header-shows" "main-shows" "img-shows" "img-shows2" "img-shows3" "footer-shows";
-  background-image: url(../images/fonfo_de_pantalla.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .header-shows {
   grid-area: header-shows;
-}
-
-.header-shows img {
-  width: 150px;
-  border-radius: 50%;
-  margin: 5px;
 }
 
 .main-shows {
@@ -206,8 +255,8 @@
 .main-shows h2 {
   color: white;
   text-align: center;
-  margin-top: 200px;
-  margin-bottom: 50px;
+  margin-top: 300px;
+  margin-bottom: 100px;
 }
 
 .img-shows {
@@ -235,8 +284,9 @@
 }
 
 .div img {
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
+  border-radius: 20%;
 }
 
 .div img:hover {
@@ -264,6 +314,8 @@
 .footer-shows {
   grid-area: footer-shows;
   margin-top: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /*Contrataciones*/
@@ -272,11 +324,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3 1fr);
   grid-template-areas: "header-contrata" "main-contrata" "footer-contrata";
-  background-image: url(../images/fonfo_de_pantalla.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 40px;
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .header-contrata {
@@ -291,6 +339,12 @@
   margin-top: 200px;
   color: aqua;
   font-size: 1.5rem;
+}
+
+.main-contrata div {
+  width: 90%;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .main-contrata form div p {
@@ -315,10 +369,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5 1fr);
   grid-template-areas: "nos_header" "mnosotros" "imagen" "parrafo" "nos_footer";
-  background-image: url(../images/fonfo_de_pantalla.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .nos_header {
@@ -336,9 +387,9 @@
 }
 
 .mnosotros h2 {
-  margin-top: 150px;
+  margin-top: 250px;
   margin-bottom: 50px;
-  color: blueviolet;
+  color: rgb(92, 68, 156);
   font-weight: 700;
   text-align: center;
 }
@@ -357,15 +408,16 @@
 
 .parrafo {
   grid-area: parrafo;
+  padding: 30px;
   color: white;
   margin-top: 60px;
   margin-bottom: 80px;
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
-  background-color: black;
+  background: radial-gradient(circle, rgb(12, 12, 12), rgb(1, 54, 13), rgb(77, 5, 5));
 }
 
 .nos_footer {
@@ -378,10 +430,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3 1fr);
   grid-template-areas: "header-rrhh" "main-rrhh" "footer-rrhh";
-  background-image: url(../images/fonfo_de_pantalla.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
 .header-rrhh {
@@ -400,8 +449,9 @@
 
 .main-rrhh h2 {
   font-size: 25px;
-  color: aquamarine;
+  color: rgb(156, 85, 85);
   margin-top: 200px;
+  font-weight: 700;
 }
 
 .contacto {
@@ -409,9 +459,37 @@
   margin-bottom: 200px;
 }
 
-.contacto input {
-  display: block;
-  margin: 10px;
+.contacto {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.campo {
+  width: 350px;
+  margin-bottom: 30px;
+}
+
+.sexo {
+  margin-bottom: 30px;
+}
+
+.sexo input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.reset input {
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.campo input {
+  width: 400px;
+}
+
+h5 {
+  color: white;
 }
 
 .footer-rrhh {
@@ -419,42 +497,32 @@
   text-align: center;
 }
 
-@media only screen and (mmax-width: 768px) {
+@media only screen and (max-width: 768px) {
   /*inicio*/
-  .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5 1fr);
-    grid-template-areas: "header header" "main main" "carrusel artistas" "video video" "footer footer";
-  }
-  .header img {
-    width: 100px;
-  }
-  .header h1 {
-    font-size: 25px;
-    color: brown;
-  }
-  .texto {
-    font-size: 15px;
-    margin: 20px;
-  }
-  .carrusel img {
-    width: 250px;
-    height: 250px;
+  .main h1 {
+    font-size: 24px;
   }
   .artistas img {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
+    width: 200px;
+    height: 200px;
   }
-  .video button {
-    margin-top: 30px;
+  .footer-container h5 {
+    font-size: 16px;
   }
-  .video button img {
-    width: 80px;
+  .footer p {
+    font-size: 12px;
+  }
+  .gif img {
+    width: 125px;
+    padding: 0;
+    margin: 0;
+  }
+  .link {
+    font-size: 12px;
   }
   /*shows*/
   .header-shows h2 {
-    color: rgb(116, 108, 219);
+    color: rgb(121, 219, 108);
     font-size: 2rem;
   }
   .div img {
@@ -506,11 +574,12 @@
     padding: 20px;
     margin: 20px;
   }
-  .nos_footer {
-    text-align: center;
-    padding: 40px;
-    background-color: rgb(15, 12, 26);
-    margin-top: 30px;
+  .imagen img {
+    height: 250px;
+    width: 250px;
+  }
+  .footer-p {
+    font-size: 10px;
   }
   /*RRHH*/
   .header-rrhh img {
@@ -531,49 +600,62 @@
   /*inicio*/
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9 1fr);
-    grid-template-areas: "header" "main" "carrusel" "artistas" "artistas" "artistas" "artistas" "video" "footer";
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "header" "main" "carrusel" "artistas" "video" "footer";
   }
-  .header img {
+  .titulo a img {
     width: 100px;
-  }
-  .main h1 {
-    font-size: 16px;
-    color: rgb(105, 172, 78);
-  }
-  .boton__menu {
-    padding: 6px;
   }
   .carrusel p {
     font-size: 20px;
+  }
+  .main h1 {
+    font-size: 15px;
     text-align: center;
-    margin: 5px;
-  }
-  .artistas {
-    margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .artistas img {
-    height: 250px;
-    width: 250px;
-    margin: 15px;
   }
   .video iframe {
     width: 300px;
-    height: 300px;
+    height: 400px;
+  }
+  .centrar-videos button {
+    font-size: 0.5rem;
+  }
+  .centrar-videos button img {
+    width: 100px;
+  }
+  .redes img {
+    width: 25px;
+    margin-top: 10px;
+  }
+  .redes {
+    padding: 5px;
+  }
+  button {
+    background-color: rgb(26, 8, 124);
+  }
+  .footer-p {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .centrar-videos button {
     background-color: rgb(172, 170, 209);
     color: rgb(33, 21, 146);
   }
-  .footer-link {
-    margin-top: 10px;
-    text-align: center;
+  .centrar-videos h2 {
+    font-size: 15px;
   }
-  .footer-link a {
-    color: rgb(224, 102, 102);
+  .text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .redes {
+    display: flex;
+  }
+  .redes h5 {
+    font-size: 12px;
   }
   /*shows*/
   .shows-grid {
@@ -607,16 +689,18 @@
   }
   /*nosotros*/
   .imagen img {
-    width: 140px;
-    height: 140px;
-  }
-  .mnosotros h2 {
-    font-size: 2rem;
+    width: 150px;
+    height: 150px;
   }
   .parrafo p {
     color: rgb(153, 230, 150);
     text-align: center;
     font-size: 11px;
+  }
+  .parrafo {
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   /*RRHH*/
   .header-rrhh img {
