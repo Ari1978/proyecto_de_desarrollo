@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*Tipografia con enlace web*/
+/*font-family: "Abril Fatface", serif;*/
 /*tipografia local*/
 @font-face {
-  font-family: Barber-Outline;
-  src: url(../typo/Barber-Outline.otf);
+  font-family: Barber-Complete;
+  src: url(../typo/Barber-Complete.otf);
 }
 .container {
   display: grid;
@@ -26,7 +29,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to top, rgb(3, 3, 3), rgb(2, 6, 248));
+  height: 0px;
 }
 
 .whats a img {
@@ -47,35 +50,66 @@
 }
 
 .main h1 {
-  color: rgb(211, 229, 230);
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 350px;
   margin-bottom: 50px;
-  font-weight: 800;
-  font-family: Barber-Outline;
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-weight: 600;
+  animation-name: h1;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
 }
 
+@keyframes h1 {
+  0% {
+    opacity: 1;
+    color: rgb(230, 239, 240);
+  }
+  25% {
+    opacity: 0.25;
+    color: rgb(41, 241, 15);
+  }
+  50% {
+    opacity: 0.5;
+    color: rgb(241, 28, 28);
+    transform: scale(1.1, 1.1);
+  }
+  75% {
+    opacity: 0.75;
+    color: rgb(48, 7, 233);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .carrusel {
   grid-area: carrusel;
 }
 
+.carrusel-img {
+  width: 700px;
+  height: auto;
+}
+
 .carrusel p {
   text-align: center;
-  margin-top: 50px;
-  font-family: "Courier New", Courier, monospace;
-  color: rgb(223, 163, 218);
+  margin-top: 10px;
+  font-family: "Abril Fatface", serif;
+  color: white;
   padding: 10px;
-  font-weight: 900;
+  font-weight: 200;
   font-size: 1.5rem;
   background: linear-gradient(to top, rgb(46, 46, 97), rgb(47, 97, 40));
   transition: all 2s;
 }
 
 .carrusel p:hover {
-  color: black;
-  transform: scale3d(1.5, 1.5, 1);
-  background: linear-gradient(to top, rgb(230, 11, 11), rgb(204, 197, 135));
+  color: white;
+  transform: scale3d(1.2, 1.2, 1);
+  background: linear-gradient(to top, rgb(230, 11, 11), rgb(36, 11, 12));
 }
 
 .artistas {
@@ -93,9 +127,9 @@ h2 {
   text-align: center;
   margin-top: 150px;
   margin-bottom: 50px;
-  color: rgb(145, 122, 122);
-  font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-weight: 200;
+  font-family: "Abril Fatface", serif;
   text-decoration: underline;
 }
 
@@ -110,11 +144,6 @@ h2 {
   grid-area: video;
 }
 
-.centrar-videos {
-  display: flex;
-  flex-direction: column;
-}
-
 .video1 {
   text-align: center;
 }
@@ -124,17 +153,11 @@ h2 {
 }
 
 .centrar-videos h4 {
-  color: rgb(240, 39, 66);
+  color: white;
   text-align: center;
   font-weight: 800;
   padding-bottom: 10px;
   margin-top: 30px;
-}
-
-.video iframe {
-  width: 500px;
-  height: 600px;
-  margin: 30px;
 }
 
 .centrar-videos button {
@@ -144,6 +167,7 @@ h2 {
   padding: 10px;
   box-shadow: 2px 2px 2px 2px;
   border-radius: 10%;
+  margin-bottom: 50px;
 }
 
 .centrar-videos button img {
@@ -160,6 +184,7 @@ h2 {
   color: green;
   border: 2px solid black;
   box-shadow: 2px 2px 2px 2px;
+  transform: scale(1.2, 1.2);
 }
 
 .footer {
@@ -183,32 +208,52 @@ hr {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 10px;
+  padding: 5px;
+}
+
+.redes img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .redes h5 {
   color: white;
   margin-top: 10px;
+  font-family: "Abril Fatface", serif;
 }
 
 .text {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 .link {
-  display: flex;
-  gap: 40px;
-  align-content: center;
+  text-align: center;
+}
+
+.link button {
+  margin: 15px;
+  background-color: rgb(17, 68, 24);
+  padding: 5px;
+}
+
+.link button:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .link a {
   text-decoration: none;
-  align-content: center;
+  color: aliceblue;
+  padding: 20px;
 }
 
 .gif img {
   width: 200px;
+}
+
+.gif img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .email {
@@ -219,13 +264,17 @@ hr {
 
 .email a {
   text-decoration: none;
-  padding: 5px;
   color: antiquewhite;
   font-weight: 800;
 }
 
-button {
-  background-color: rgb(17, 68, 24);
+.email button {
+  background-color: rgb(9, 82, 9);
+  padding: 5px;
+}
+
+.email button:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .footer-p {
@@ -261,54 +310,70 @@ button {
 
 .img-shows {
   grid-area: img-shows;
-  margin: 20px;
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  gap: 40px;
+  margin-bottom: 100px;
 }
 
 .img-shows2 {
   grid-area: img-shows2;
-  margin: 20px;
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  gap: 40px;
+  margin-bottom: 100px;
 }
 
 .img-shows3 {
   grid-area: img-shows3;
-  margin: 20px;
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  gap: 40px;
 }
 
 .div img {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 450px;
   border-radius: 20%;
 }
 
 .div img:hover {
-  height: 300px;
-  width: 300px;
+  transform: scale(1.3, 1.3);
 }
 
-.div button {
-  padding: 5px;
+.pyb button {
+  font-size: 15px;
+  padding: 10px;
   margin: 5px;
   border-radius: 10%;
   box-shadow: 2px 2px 2px 2px white;
-  color: red;
-  font-weight: bold;
+  color: gray;
+  background-color: rgb(77, 5, 5);
+  font-weight: 600;
+  text-align: center;
 }
 
-.div button:hover {
-  color: rgb(33, 116, 13);
+.pyb button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+}
+
+.pyb {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .div p {
-  color: crimson;
+  color: rgb(224, 157, 170);
+  font-size: 2rem;
+}
+
+.pyb a {
+  text-decoration: none;
 }
 
 .footer-shows {
@@ -335,16 +400,19 @@ button {
   grid-area: main-contrata;
 }
 
-.main-contrata div h2 {
-  margin-top: 200px;
-  color: aqua;
-  font-size: 1.5rem;
-}
-
-.main-contrata div {
-  width: 90%;
+.formu {
   margin-left: 40px;
   margin-right: 40px;
+}
+
+form label {
+  text-align: center;
+}
+
+.main-contrata h2 {
+  margin-top: 200px;
+  color: rgb(255, 0, 149);
+  font-size: 1.5rem;
 }
 
 .main-contrata form div p {
@@ -437,51 +505,57 @@ button {
   grid-area: header-rrhh;
 }
 
-.header-rrhh img {
-  width: 150px;
-  border-radius: 50%;
-  margin: 5px;
-}
-
 .main-rrhh {
   grid-area: main-rrhh;
 }
 
-.main-rrhh h2 {
+.main-rrhh div h2 {
   font-size: 25px;
-  color: rgb(156, 85, 85);
+  color: white;
   margin-top: 200px;
   font-weight: 700;
 }
 
 .contacto {
   margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .contacto {
   display: flex;
   justify-content: center;
-  width: 90%;
 }
 
 .campo {
-  width: 350px;
+  width: auto;
   margin-bottom: 30px;
 }
 
-.sexo {
+.campo input {
+  height: 40px;
+  border-radius: 5%;
+}
+
+.genero {
+  display: flex;
+  gap: 40px;
   margin-bottom: 30px;
 }
 
 .sexo input {
-  padding: 5px;
+  padding: 8px;
   margin-right: 5px;
+  background-color: rgb(15, 70, 70);
+  color: white;
+  border-radius: 10%;
 }
 
 .reset input {
-  padding: 5px;
-  margin-right: 20px;
+  padding: 8px;
+  margin-right: 40px;
+  background-color: rgb(15, 70, 70);
+  color: white;
+  border-radius: 10%;
 }
 
 .campo input {
@@ -526,32 +600,25 @@ h5 {
     font-size: 2rem;
   }
   .div img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   .div p {
     color: rgb(187, 184, 40);
+    font-size: 20px;
   }
   .footer_estilo h4 {
     padding: 10px;
     color: aquamarine;
   }
   /*contrataciones*/
-  .menu img {
-    width: 100px;
-  }
   .main-contrata div h2 {
     color: rgb(106, 201, 97);
     font-size: 20px;
   }
   .main-contrata form div p {
     color: rgb(185, 124, 44);
-    font-size: 10px;
-  }
-  .main-contrata div label {
-    color: black;
     font-size: 12px;
-    font-weight: 600;
   }
   /*nosotros*/
   .nosheader img {
@@ -606,6 +673,9 @@ h5 {
   .titulo a img {
     width: 100px;
   }
+  .carrusel-img {
+    width: auto;
+  }
   .carrusel p {
     font-size: 20px;
   }
@@ -614,9 +684,13 @@ h5 {
     text-align: center;
     margin-top: 200px;
   }
-  .video iframe {
+  .video1 video {
     width: 300px;
-    height: 400px;
+    height: auto;
+  }
+  .video2 video {
+    width: 300px;
+    height: auto;
   }
   .centrar-videos button {
     font-size: 0.5rem;
@@ -668,9 +742,27 @@ h5 {
     color: rgb(73, 82, 221);
     font-size: 2rem;
   }
+  .img-shows {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .img-shows2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .img-shows3 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
   .div img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   .div p {
     color: rgb(187, 184, 40);
@@ -690,8 +782,8 @@ h5 {
   }
   /*nosotros*/
   .imagen img {
-    width: 150px;
-    height: 150px;
+    width: auto;
+    height: 130px;
   }
   .parrafo p {
     color: rgb(153, 230, 150);
@@ -703,6 +795,17 @@ h5 {
     margin-left: 40px;
     margin-right: 40px;
   }
+  .email a {
+    font-size: 14px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+  .link {
+    display: flex;
+    flex-direction: column;
+  }
   /*RRHH*/
   .header-rrhh img {
     width: 80px;
@@ -712,10 +815,20 @@ h5 {
   .main-rrhh {
     grid-area: main-rrhh;
   }
-  .main-rrhh h2 {
+  .main-rrhh div h2 {
     font-size: 18px;
-    color: aquamarine;
+    color: rgb(230, 143, 143);
     text-align: center;
+  }
+  .campo input {
+    width: 300px;
+    text-align: center;
+  }
+  .campo h5 {
+    font-size: 15px;
+  }
+  .sexo h5 {
+    font-size: 15px;
   }
 }
 
