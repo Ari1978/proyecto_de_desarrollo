@@ -15,63 +15,39 @@
 </head>
 
 <body class="container">
-    <header class="header menu">
-
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid menu">
-                <div class="whats">
-                    <a class="navbar-brand" href="https://web.whatsapp.com/"><img
-                            src="./images/logo_whatsapp_icon_181638.png"></a>
-                </div>
-                <div class="titulo">
-                    <a href="../index.html"><img src="./images/tromb.webp" alt="tromb"></a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
+    <header class="header menu fixed-top">
+        <div class="titulo">
+            <a href="./index.html"><img src="../images/tromb.webp" alt="tromb"></a>
+        </div>
+        <nav class="navbar navbar-expand-lg data-bs-theme=dark list-menu">
+            <div class="container-fluid">
+                <h4>Menú</h4>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Tromb</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Quienes
-                                    somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/shows.html">Elegí tu show</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Otras opciones
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="./pages/Rrhh.html">Unite al équipo</a></li>
-                                    <hr>
-                                    <hr>
-                                    <li><a class="dropdown-item" href="./pages/Contratar.html">Contrataciones</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Redes sociales</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-success" type="submit">Buscar</button>
-                        </form>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">¿Quines somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/shows.html">Elegí tu show</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Rrhh.html">Trabaja con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Contratar.html">Contrataciones</a>
+                        </li>
                 </div>
             </div>
         </nav>
+
     </header>
 
     <main class="main">
@@ -169,18 +145,29 @@
                 </div>
 
                 <div class="link">
-                    <button>
-                        <a href="./pages/nosotros.html">Quienes somos</a></li>
-                    </button>
-                    <button>
-                        <a href="./pages/shows.html">Elegí tu show</a></li>
-                    </button>
-                    <button>
-                        <a href="./pages/Contratar.html">Contrataciones</a></li>
-                    </button>
-                    <button>
-                        <a href="./pages/Rrhh.html">Unite al équipo</a></li>
-                    </button>
+                    <div class="express">
+                        <h5>Consulta express</h5>
+                        <p>
+                            Desde el primer contacto, te darás cuenta que estas en buenas manos...
+                            Con atención de calidad, personalizada y sin demoras!
+                            Enorme variedad de artistas y shows a los mejores costos del mercado.
+                            ESTAMOS PARA AYUDARTE
+                        </p>
+                    </div>
+                    <div class="contactame">
+                        <h5>Contactame</h5>
+                        <input type="text" class="form-control" placeholder="Nombre*">
+                        <input type="text" class="form-control" placeholder="Tipo de evento*">
+                        <input type="number" class="form-control" placeholder="Teléfono*">
+                        <input type="email" class="form-control" placeholder="Email*">
+                    </div>
+                    <div>
+                        <h5>Mensaje</h5>
+                        <textarea class="form-control" placeholder="Mensaje*"></textarea>
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
                 </div>
 
                 <div class="gif">

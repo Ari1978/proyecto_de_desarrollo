@@ -29,7 +29,28 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 0px;
+  background-color: black;
+  opacity: 0.9;
+}
+
+h4 {
+  color: white;
+  font-weight: 700;
+}
+
+.list-menu button {
+  color: aliceblue;
+  background-color: rgb(48, 119, 182);
+}
+
+.list-menu a {
+  color: aliceblue;
+  margin: 10px;
+}
+
+.list-menu a:hover {
+  color: green;
+  transform: scale(1.2, 1.2);
 }
 
 .whats a img {
@@ -42,7 +63,7 @@
 }
 
 .titulo a img {
-  width: 150px;
+  width: 250px;
 }
 
 .main {
@@ -50,39 +71,34 @@
 }
 
 .main h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  margin-top: 350px;
+  margin-top: 300px;
   margin-bottom: 50px;
   font-family: "Abril Fatface", serif;
-  color: white;
-  font-weight: 600;
-  animation-name: h1;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 5s;
+  font-weight: 800;
+  animation: h1 8s linear infinite alternate both;
 }
 
 @keyframes h1 {
   0% {
-    opacity: 1;
-    color: rgb(230, 239, 240);
+    opacity: 0;
   }
   25% {
-    opacity: 0.25;
-    color: rgb(41, 241, 15);
+    opacity: 1;
+    color: rgb(36, 240, 9);
   }
   50% {
-    opacity: 0.5;
-    color: rgb(241, 28, 28);
-    transform: scale(1.1, 1.1);
+    opacity: 1;
+    color: rgb(241, 13, 13);
   }
   75% {
-    opacity: 0.75;
-    color: rgb(48, 7, 233);
+    opacity: 1;
+    color: rgb(51, 8, 241);
   }
   100% {
     opacity: 1;
+    color: white;
   }
 }
 .carrusel {
@@ -130,7 +146,6 @@ h2 {
   color: white;
   font-weight: 200;
   font-family: "Abril Fatface", serif;
-  text-decoration: underline;
 }
 
 .artistas img {
@@ -193,6 +208,8 @@ h2 {
 
 .footer-container {
   margin-top: 50px;
+  background-color: rgb(17, 16, 16);
+  opacity: 0.6;
 }
 
 hr {
@@ -228,8 +245,8 @@ hr {
   gap: 40px;
 }
 
-.link {
-  text-align: center;
+.contactame input {
+  margin-bottom: 10px;
 }
 
 .link button {
@@ -240,6 +257,19 @@ hr {
 
 .link button:hover {
   transform: scale(1.2, 1.2);
+}
+
+.link p {
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.link button {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10%;
 }
 
 .link a {
@@ -304,7 +334,7 @@ hr {
 .main-shows h2 {
   color: white;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 200px;
   margin-bottom: 100px;
 }
 
@@ -470,8 +500,8 @@ form label {
 }
 
 .imagen img {
-  height: 250px;
-  width: 250px;
+  height: 350px;
+  width: 350px;
 }
 
 .parrafo {
@@ -480,8 +510,8 @@ form label {
   color: white;
   margin-top: 60px;
   margin-bottom: 80px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -490,6 +520,8 @@ form label {
 
 .nos_footer {
   grid-area: nos_footer;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /*RRHH*/
@@ -569,6 +601,100 @@ h5 {
 .footer-rrhh {
   grid-area: footer-rrhh;
   text-align: center;
+}
+
+/*daddy mix*/
+.daddy-mix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6 1fr);
+  grid-template-areas: "header-daddy header-daddy" "main-daddy main-daddy" "card1 card2" "card3 card4" "boton boton" "footer-daddy footer-daddy";
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
+}
+
+.header-daddy {
+  grid-area: header-daddy;
+}
+
+.main-daddy {
+  grid-area: main-daddy;
+}
+
+.main-daddy h1 {
+  color: white;
+  text-align: center;
+  margin: 30px;
+  margin-top: 400px;
+  font-family: fantasy;
+}
+
+.card1 {
+  grid-area: card1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.card2 {
+  grid-area: card2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.card3 {
+  grid-area: card3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin: 40px;
+}
+
+.card4 {
+  grid-area: card4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin: 40px;
+}
+
+.boton {
+  grid-area: boton;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.boton button {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  margin: 35px;
+  border-radius: 10%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.boton button:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 2px 2px 2px rgb(124, 124, 216);
+}
+
+.footer-daddy {
+  grid-area: footer-daddy;
+}
+
+.daddy img {
+  width: 300px;
+  height: 500;
+}
+
+.parrafos {
+  color: white;
+  margin: 20px;
 }
 
 @media only screen and (max-width: 768px) {

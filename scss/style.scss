@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /*Tipografia con enlace web*/
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&display=swap");
+
 /*font-family: "Abril Fatface", serif;*/
 /*tipografia local*/
 @font-face {
@@ -36,7 +38,28 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 0px;
+  background-color: black;
+  opacity: 0.9;
+}
+
+h4 {
+  color: white;
+  font-weight: 700;
+}
+
+.list-menu button {
+  color: aliceblue;
+  background-color: rgb(48, 119, 182);
+}
+
+.list-menu a {
+  color: aliceblue;
+  margin: 10px;
+}
+
+.list-menu a:hover {
+  color: green;
+  transform: scale(1.2, 1.2);
 }
 
 .whats a img {
@@ -49,7 +72,7 @@
 }
 
 .titulo a img {
-  width: 150px;
+  width: 250px;
 }
 
 .main {
@@ -57,25 +80,40 @@
 }
 
 .main h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  margin-top: 350px;
+  margin-top: 300px;
   margin-bottom: 50px;
   font-family: "Abril Fatface", serif;
-  color: white;
-  font-weight: 600;
-  animation-name: h1;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 5s;
+  font-weight: 800;
+  animation: h1 8s linear infinite alternate both;
 }
-@keyframes h1{
-  0%{opacity: 1; color: rgb(230, 239, 240);}
-  25%{opacity: 0.25; color: rgb(41, 241, 15);;}
-  50%{opacity: 0.50; color: rgb(241, 28, 28);transform: scale(1.1, 1.1)}
-  75%{opacity: 0.75; color: rgb(48, 7, 233);}
-  100%{opacity: 1;}
+
+@keyframes h1 {
+  0% {
+    opacity: 0;
   }
+
+  25% {
+    opacity: 1;
+    color: rgb(36, 240, 9);
+  }
+
+  50% {
+    opacity: 1;
+    color: rgb(241, 13, 13);
+  }
+
+  75% {
+    opacity: 1;
+    color: rgb(51, 8, 241);
+  }
+
+  100% {
+    opacity: 1;
+    color: white;
+  }
+}
 
 .carrusel {
   grid-area: carrusel;
@@ -97,7 +135,6 @@
   background: linear-gradient(to top, rgb(46, 46, 97), rgb(47, 97, 40));
   transition: all 2s;
 }
-
 
 .carrusel p:hover {
   color: white;
@@ -123,7 +160,6 @@ h2 {
   color: white;
   font-weight: 200;
   font-family: "Abril Fatface", serif;
-  text-decoration: underline;
 }
 
 .artistas img {
@@ -140,10 +176,10 @@ h2 {
 .video1 {
   text-align: center;
 }
-.video2{
+
+.video2 {
   text-align: center;
 }
-
 
 .centrar-videos h4 {
   color: white;
@@ -186,6 +222,8 @@ h2 {
 
 .footer-container {
   margin-top: 50px;
+  background-color: rgb(17, 16, 16);
+  opacity: 0.6;
 }
 
 hr {
@@ -203,9 +241,11 @@ hr {
   align-content: center;
   padding: 5px;
 }
-.redes img:hover{
+
+.redes img:hover {
   transform: scale(1.2, 1.2);
 }
+
 .redes h5 {
   color: white;
   margin-top: 10px;
@@ -219,17 +259,36 @@ hr {
   gap: 40px;
 }
 
-.link {
-  text-align: center;
+
+.contactame input {
+  margin-bottom: 10px;
+
 }
+
 .link button {
   margin: 15px;
   background-color: rgb(17, 68, 24);
   padding: 5px;
 }
-.link button:hover{
+
+.link button:hover {
   transform: scale(1.2, 1.2);
 }
+
+.link p {
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.link button {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10%;
+
+}
+
 .link a {
   text-decoration: none;
   color: aliceblue;
@@ -239,9 +298,11 @@ hr {
 .gif img {
   width: 200px;
 }
-.gif img:hover{
+
+.gif img:hover {
   transform: scale(1.2, 1.2);
 }
+
 .email {
   text-align: center;
   margin-top: 40px;
@@ -254,11 +315,12 @@ hr {
   font-weight: 800;
 }
 
-.email button{
+.email button {
   background-color: rgb(9, 82, 9);
   padding: 5px;
 }
-.email button:hover{
+
+.email button:hover {
   transform: scale(1.2, 1.2);
 }
 
@@ -295,7 +357,7 @@ hr {
 .main-shows h2 {
   color: white;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 200px;
   margin-bottom: 100px;
 }
 
@@ -339,19 +401,20 @@ hr {
   border-radius: 10%;
   box-shadow: 2px 2px 2px 2px white;
   color: gray;
-  background-color:rgb(77, 5, 5);
+  background-color: rgb(77, 5, 5);
   font-weight: 600;
   text-align: center;
- }
- .pyb button:hover{
-  transform: scale(1.1, 1.1);
- }
+}
 
+.pyb button:hover {
+  transform: scale(1.1, 1.1);
+}
 
 .div {
   display: flex;
   flex-direction: column;
 }
+
 .pyb {
   text-align: center;
   margin-top: 20px;
@@ -361,9 +424,11 @@ hr {
   color: rgb(224, 157, 170);
   font-size: 2rem;
 }
-.pyb a{
+
+.pyb a {
   text-decoration: none;
 }
+
 .footer-shows {
   grid-area: footer-shows;
   margin-top: 150px;
@@ -390,15 +455,15 @@ hr {
 
 .main-contrata {
   grid-area: main-contrata;
-  
- }
- .formu{
+}
+
+.formu {
   margin-left: 40px;
   margin-right: 40px;
- }
+}
 
-form label{
- text-align: center;
+form label {
+  text-align: center;
 }
 
 .main-contrata h2 {
@@ -406,7 +471,6 @@ form label{
   color: rgb(255, 0, 149);
   font-size: 1.5rem;
 }
-
 
 .main-contrata form div p {
   color: aquamarine;
@@ -469,8 +533,8 @@ form label{
 }
 
 .imagen img {
-  height: 250px;
-  width: 250px;
+  height: 350px;
+  width: 350px;
 }
 
 .parrafo {
@@ -479,22 +543,23 @@ form label{
   color: white;
   margin-top: 60px;
   margin-bottom: 80px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  background: radial-gradient(
-    circle,
-    rgb(12, 12, 12),
-    rgb(1, 54, 13),
-    rgb(77, 5, 5)
-  );
+  background: radial-gradient(circle,
+      rgb(12, 12, 12),
+      rgb(1, 54, 13),
+      rgb(77, 5, 5));
 }
 
 .nos_footer {
   grid-area: nos_footer;
+  margin-left: 200px;
+  margin-right: 200px;
 }
+
 
 /*RRHH*/
 
@@ -517,7 +582,7 @@ form label{
   grid-area: main-rrhh;
 }
 
-.main-rrhh div h2{
+.main-rrhh div h2 {
   font-size: 25px;
   color: white;
   margin-top: 200px;
@@ -533,19 +598,23 @@ form label{
   display: flex;
   justify-content: center;
 }
+
 .campo {
   width: auto;
   margin-bottom: 30px;
 }
-.campo input{
+
+.campo input {
   height: 40px;
   border-radius: 5%;
 }
-.genero{
+
+.genero {
   display: flex;
   gap: 40px;
   margin-bottom: 30px;
 }
+
 .sexo input {
   padding: 8px;
   margin-right: 5px;
@@ -553,6 +622,7 @@ form label{
   color: white;
   border-radius: 10%;
 }
+
 .reset input {
   padding: 8px;
   margin-right: 40px;
@@ -564,6 +634,7 @@ form label{
 .campo input {
   width: 400px;
 }
+
 h5 {
   color: white;
 }
@@ -573,7 +644,102 @@ h5 {
   text-align: center;
 }
 
+/*daddy mix*/
+
+.daddy-mix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6 1fr);
+  grid-template-areas:
+    "header-daddy header-daddy"
+    "main-daddy main-daddy"
+    "card1 card2"
+    "card3 card4"
+    "boton boton"
+    "footer-daddy footer-daddy";
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
+}
+
+.header-daddy{
+  grid-area: header-daddy;
+}
+.main-daddy{
+  grid-area: main-daddy;
+}
+.main-daddy h1{
+  color: white;
+  text-align: center;
+  margin: 30px;
+  margin-top: 400px;
+  font-family: fantasy;
+}
+.card1{
+  grid-area: card1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin: 40px;
+}
+.card2{
+  grid-area: card2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.card3{
+  grid-area: card3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin: 40px;
+}
+.card4{
+  grid-area: card4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin: 40px;
+}
+.boton{
+  grid-area: boton;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.boton button{
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  margin: 35px;
+  border-radius: 10%;
+font-weight: 600;
+font-size: 18px;
+}
+.boton button:hover{
+  transform: scale(1.1, 1.1);
+  box-shadow: 2px 2px 2px rgb(124, 124, 216);
+
+}
+
+.footer-daddy{
+  grid-area: footer-daddy;
+}
+  
+
+.daddy img {
+  width: 300px;
+  height: 500;
+}
+.parrafos{
+  color: white;
+  margin: 20px;
+}
+
 @media only screen and (max-width: 768px) {
+
   /*inicio*/
   .main h1 {
     font-size: 24px;
@@ -604,7 +770,6 @@ h5 {
 
   /*shows*/
 
-
   .header-shows h2 {
     color: rgb(121, 219, 108);
     font-size: 2rem;
@@ -627,7 +792,6 @@ h5 {
 
   /*contrataciones*/
 
-
   .main-contrata div h2 {
     color: rgb(106, 201, 97);
     font-size: 20px;
@@ -637,7 +801,6 @@ h5 {
     color: rgb(185, 124, 44);
     font-size: 12px;
   }
-
 
   /*nosotros*/
 
@@ -664,6 +827,7 @@ h5 {
     padding: 20px;
     margin: 20px;
   }
+
   .imagen img {
     height: 250px;
     width: 250px;
@@ -707,12 +871,15 @@ h5 {
       "video"
       "footer";
   }
+
   .titulo a img {
     width: 100px;
   }
+
   .carrusel-img {
     width: auto;
   }
+
   .carrusel p {
     font-size: 20px;
   }
@@ -722,15 +889,17 @@ h5 {
     text-align: center;
     margin-top: 200px;
   }
-  .video1 video{
+
+  .video1 video {
     width: 300px;
     height: auto;
   }
-  .video2 video{
+
+  .video2 video {
     width: 300px;
     height: auto;
   }
-  
+
   .centrar-videos button {
     font-size: 0.5rem;
   }
@@ -761,9 +930,11 @@ h5 {
     background-color: rgb(172, 170, 209);
     color: rgb(33, 21, 146);
   }
+
   .centrar-videos h2 {
     font-size: 15px;
   }
+
   .text {
     display: flex;
     flex-wrap: wrap;
@@ -771,9 +942,11 @@ h5 {
     justify-content: center;
     align-items: center;
   }
+
   .redes {
     display: flex;
   }
+
   .redes h5 {
     font-size: 12px;
   }
@@ -796,19 +969,22 @@ h5 {
     color: rgb(73, 82, 221);
     font-size: 2rem;
   }
-  .img-shows{
+
+  .img-shows {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
   }
-  .img-shows2{
+
+  .img-shows2 {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
   }
-  .img-shows3{
+
+  .img-shows3 {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -835,7 +1011,7 @@ h5 {
     color: aquamarine;
     font-size: 10px;
   }
-  
+
   .main-contrata div label {
     color: rgb(196, 230, 73);
     font-size: 12px;
@@ -859,17 +1035,19 @@ h5 {
     margin-left: 40px;
     margin-right: 40px;
   }
-  .email a{
+
+  .email a {
     font-size: 14px;
   }
-  .text{
+
+  .text {
     display: flex;
     flex-direction: column;
   }
-  .link{
+
+  .link {
     display: flex;
     flex-direction: column;
-
   }
 
   /*RRHH*/
@@ -888,14 +1066,17 @@ h5 {
     color: rgb(230, 143, 143);
     text-align: center;
   }
+
   .campo input {
     width: 300px;
     text-align: center;
   }
-  .campo h5{
+
+  .campo h5 {
     font-size: 15px;
   }
-  .sexo h5{
+
+  .sexo h5 {
     font-size: 15px;
   }
 }
