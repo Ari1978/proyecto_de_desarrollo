@@ -92,28 +92,28 @@ h4 {
   margin-top: 300px;
   margin-bottom: 50px;
   font-family: "Abril Fatface", serif;
-  font-weight: 800;
+  font-weight: 500;
   animation: h1 8s linear infinite alternate both;
 }
 
 @keyframes h1 {
   0% {
     opacity: 1;
-    color: green;
+    color: rgb(15, 235, 15);
   }
   25% {
     opacity: 0;
   }
   50% {
     opacity: 1;
-    color: rgb(241, 13, 13);
+    color: rgb(243, 43, 70);
   }
   75% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-    color: white;
+    color: rgb(107, 92, 243);
   }
 }
 .carrusel {
@@ -196,23 +196,16 @@ video {
   margin-top: 30px;
 }
 
-.centrar-videos button {
-  background-color: rgb(13, 14, 13);
-  color: rgb(78, 78, 74);
-  font-size: 1rem;
-  padding: 10px;
-  box-shadow: 2px 2px 2px 2px;
-  border-radius: 10%;
-  margin-bottom: 50px;
-}
-
-.centrar-videos button img {
-  width: 150px;
-}
-
 .boton {
   text-align: center;
   margin-top: 30px;
+}
+
+.boton a {
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+  font-weight: 700;
 }
 
 .centrar-videos button:hover {
@@ -888,6 +881,7 @@ h5 {
   }
   .main h1 {
     margin-top: 200px;
+    font-size: 2rem;
   }
   .video1 video {
     width: 200px;
@@ -898,10 +892,7 @@ h5 {
     height: auto;
   }
   .centrar-videos button {
-    font-size: 0.5rem;
-  }
-  .centrar-videos button img {
-    width: 100px;
+    background-color: rgb(12, 11, 46);
   }
   .redes img {
     width: 25px;
@@ -910,19 +901,9 @@ h5 {
   .redes {
     padding: 5px;
   }
-  button {
-    background-color: rgb(26, 8, 124);
-  }
-  .boton a img {
-    width: 140px;
-  }
   .footer-p {
     margin-left: 20px;
     margin-right: 20px;
-  }
-  .centrar-videos button {
-    background-color: rgb(172, 170, 209);
-    color: rgb(33, 21, 146);
   }
   .text {
     display: flex;
