@@ -181,6 +181,11 @@ h2 {
   height: 400px;
   margin: 10px;
   border-radius: 50%;
+  transition: all 2s;
+}
+.artistas img:hover{
+ transform: rotate(40deg);
+ transform: scale(1.1, 1.1);
 }
 
 .video {
