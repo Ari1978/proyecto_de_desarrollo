@@ -87,7 +87,7 @@ h4 {
 }
 
 .main h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 300px;
   margin-bottom: 50px;
@@ -155,10 +155,11 @@ h4 {
 }
 
 h2 {
+  font-size: 2ren;
   text-align: center;
   margin-top: 150px;
   margin-bottom: 20px;
-  color: white;
+  color: rgb(230, 219, 219);
   font-weight: 200;
   font-family: "Abril Fatface", serif;
 }
@@ -886,8 +887,6 @@ h5 {
     font-size: 20px;
   }
   .main h1 {
-    font-size: 22px;
-    text-align: center;
     margin-top: 200px;
   }
   .video1 video {
@@ -914,6 +913,9 @@ h5 {
   button {
     background-color: rgb(26, 8, 124);
   }
+  .boton a img {
+    width: 140px;
+  }
   .footer-p {
     margin-left: 20px;
     margin-right: 20px;
@@ -921,9 +923,6 @@ h5 {
   .centrar-videos button {
     background-color: rgb(172, 170, 209);
     color: rgb(33, 21, 146);
-  }
-  .centrar-videos h2 {
-    font-size: 15px;
   }
   .text {
     display: flex;
@@ -935,8 +934,11 @@ h5 {
   .redes {
     display: flex;
   }
-  .redes h5 {
-    font-size: 12px;
+  h5 {
+    font-size: 15px;
+  }
+  .link p {
+    font-size: 15px;
   }
   /*shows*/
   .shows-grid {
@@ -973,6 +975,9 @@ h5 {
   .div p {
     color: rgb(187, 184, 40);
   }
+  .footer-shows {
+    margin: 20px;
+  }
   /*contrataciones*/
   .main-contrata h2 {
     color: rgb(24, 146, 89);
@@ -990,6 +995,9 @@ h5 {
     margin-left: 40px;
     margin-right: 40px;
   }
+  .footer-contrata {
+    margin: 20px;
+  }
   /*nosotros*/
   .imagen img {
     width: auto;
@@ -1005,6 +1013,9 @@ h5 {
     margin-left: 40px;
     margin-right: 40px;
   }
+  .parrafo p {
+    font-size: 15px;
+  }
   .email a {
     font-size: 14px;
   }
@@ -1015,6 +1026,9 @@ h5 {
   .link {
     display: flex;
     flex-direction: column;
+  }
+  .nos_footer {
+    margin: 20px;
   }
   /*RRHH*/
   .header-rrhh img {
@@ -1039,6 +1053,9 @@ h5 {
   }
   .sexo h5 {
     font-size: 15px;
+  }
+  .footer-rrhh {
+    margin: 20px;
   }
   /*daddy*/
   .main-daddy h1 {
