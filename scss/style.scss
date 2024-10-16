@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.float{
+.float {
   position: fixed;
   width: 50px;
   height: 50px;
@@ -17,15 +17,14 @@
   box-shadow: 2px 2px 3px #999;
   z-index: 999;
 }
-.fa-whatsapp{
+.fa-whatsapp {
   font-size: 50px;
 }
-.fa-whatsapp:hover{
+.fa-whatsapp:hover {
   background-color: rgb(15, 129, 15);
   transform: scale(1.1, 1.1);
   border-radius: 50%;
 }
-
 
 /*Tipografia con enlace web*/
 
@@ -188,16 +187,14 @@ h2 {
 
 .video1 {
   text-align: center;
- 
 }
-video{
+video {
   height: 500px;
   width: auto;
 }
 
 .video2 {
   text-align: center;
-
 }
 
 .centrar-videos h4 {
@@ -278,10 +275,8 @@ hr {
   gap: 40px;
 }
 
-
 .contactame input {
   margin-bottom: 10px;
-
 }
 
 .link button {
@@ -305,7 +300,6 @@ hr {
   background-color: blue;
   padding: 10px;
   border-radius: 10%;
-
 }
 
 .link a {
@@ -571,10 +565,12 @@ form label {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  background: radial-gradient(circle,
-      rgb(12, 12, 12),
-      rgb(1, 54, 13),
-      rgb(77, 5, 5));
+  background: radial-gradient(
+    circle,
+    rgb(12, 12, 12),
+    rgb(1, 54, 13),
+    rgb(77, 5, 5)
+  );
 }
 
 .nos_footer {
@@ -582,7 +578,6 @@ form label {
   margin-left: 200px;
   margin-right: 200px;
 }
-
 
 /*RRHH*/
 
@@ -684,109 +679,104 @@ h5 {
   background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
 
-.header-daddy{
+.header-daddy {
   grid-area: header-daddy;
 }
-.main-daddy{
+.main-daddy {
   grid-area: main-daddy;
 }
-.main-daddy h1{
+.main-daddy h1 {
   color: white;
   text-align: center;
   margin: 30px;
   margin-top: 300px;
   font-family: fantasy;
 }
-.card1{
+.card1 {
   grid-area: card1;
   display: flex;
   justify-content: center;
   align-items: center;
- margin: 40px;
- border: 2px solid gray;
- }
+  margin: 40px;
+  border: 2px solid gray;
+}
 
- 
-.card2{
+.card2 {
   grid-area: card2;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px;
- border: 2px solid gray;
+  border: 2px solid gray;
 }
 
-.card3{
+.card3 {
   grid-area: card3;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px;
- border: 2px solid gray;
+  border: 2px solid gray;
 }
-.card4{
+.card4 {
   grid-area: card4;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px;
- border: 2px solid gray;
+  border: 2px solid gray;
 }
 
-.boton{
+.boton {
   grid-area: boton;
   margin-bottom: 50px;
   margin-top: 50px;
 }
-.boton button{
+.boton button {
   color: white;
   background-color: blue;
   padding: 10px;
   margin: 35px;
   border-radius: 10%;
-font-weight: 600;
-font-size: 18px;
+  font-weight: 600;
+  font-size: 18px;
 }
-.boton button:hover{
+.boton button:hover {
   transform: scale(1.1, 1.1);
   box-shadow: 2px 2px 2px rgb(124, 124, 216);
-
 }
 
-.footer-daddy{
+.footer-daddy {
   grid-area: footer-daddy;
   margin-left: 200px;
   margin-right: 200px;
 }
-  
 
 .daddy img {
   width: 300px;
   height: 500px;
   margin: 20px;
-  
 }
-.daddy img:hover{
+.daddy img:hover {
   transform: scale(1.1, 1.1);
 }
-.astros img{
+.astros img {
   width: 300px;
   height: 300px;
 }
-.astros img:hover{
+.astros img:hover {
   transform: scale(1.1, 1.1);
 }
-.harry img{
+.harry img {
   width: 500px;
   height: 400px;
 }
-.parrafos{
+.parrafos {
   color: white;
   margin: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-
   /*inicio*/
   .main h1 {
     font-size: 24px;
@@ -836,7 +826,7 @@ font-size: 18px;
     padding: 10px;
     color: aquamarine;
   }
-  .footer-shows{
+  .footer-shows {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -852,7 +842,7 @@ font-size: 18px;
     color: rgb(185, 124, 44);
     font-size: 12px;
   }
-  .footer-contrata{
+  .footer-contrata {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -918,38 +908,35 @@ font-size: 18px;
 
   /*daddy mix*/
 
-.daddy-mix {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8 1fr);
-  grid-template-areas:
-    "header-daddy"
-    "main-daddy"
-    "card1" 
-    "card2"
-    "card3" 
-    "card4"
-    "boton"
-    "footer-daddy";
-  background-image: url(../images/fondo\ de\ pantalla.jpg);
-}
+  .daddy-mix {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8 1fr);
+    grid-template-areas:
+      "header-daddy"
+      "main-daddy"
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "boton"
+      "footer-daddy";
+    background-image: url(../images/fondo\ de\ pantalla.jpg);
+  }
 
-.header-daddy{
-  grid-area: header-daddy;
-}
-.main-daddy{
-  grid-area: main-daddy;
-}
+  .header-daddy {
+    grid-area: header-daddy;
+  }
+  .main-daddy {
+    grid-area: main-daddy;
+  }
 
-
-.footer-daddy{
-  grid-area: footer-daddy;
-  margin-left: 40px;
-  margin-right: 40px;
+  .footer-daddy {
+    grid-area: footer-daddy;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
-
-}
-
 
 @media only screen and (max-width: 480px) {
   /*inicio*/
@@ -1160,8 +1147,8 @@ font-size: 18px;
   }
 
   .main-rrhh div h2 {
-    font-size: 18px;
-    color: rgb(230, 143, 143);
+    font-size: 17px;
+    
     text-align: center;
     margin-top: 200px;
   }
@@ -1181,56 +1168,54 @@ font-size: 18px;
 
   /*daddy*/
 
-.main-daddy h1{
-  margin-top: 200px;
-}
-  .card1{
-   margin: 20px;
-   display: flex;
-   flex-direction: column;
-   }
-  
-   
-  .card2{
+  .main-daddy h1 {
+    margin-top: 200px;
+  }
+  .card1 {
     margin: 20px;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
   }
-  
-  .card3{
+
+  .card2 {
     margin: 20px;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
   }
-  .card4{
+
+  .card3 {
     margin: 20px;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
   }
-  
+  .card4 {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .daddy img {
     width: 150px;
     height: 300px;
     margin: 10px;
-    
   }
-  .astros img{
+  .astros img {
     width: 300px;
     height: 300px;
     margin: 10px;
   }
 
-  .harry img{
+  .harry img {
     width: 300px;
     height: 250px;
     margin: 10px;
   }
-  
-  .parrafos{
+
+  .parrafos {
     margin: 10px;
   }
 
-  .footer-daddy{
+  .footer-daddy {
     margin-left: 40px;
     margin-right: 40px;
   }
