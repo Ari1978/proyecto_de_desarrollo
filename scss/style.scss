@@ -776,6 +776,10 @@ font-size: 18px;
 .astros img:hover{
   transform: scale(1.1, 1.1);
 }
+.harry img{
+  width: 500px;
+  height: 400px;
+}
 .parrafos{
   color: white;
   margin: 20px;
@@ -1182,18 +1186,26 @@ font-size: 18px;
 }
   .card1{
    margin: 20px;
+   display: flex;
+   flex-direction: column;
    }
   
    
   .card2{
     margin: 20px;
+    display: flex;
+   flex-direction: column;
   }
   
   .card3{
     margin: 20px;
+    display: flex;
+   flex-direction: column;
   }
   .card4{
     margin: 20px;
+    display: flex;
+   flex-direction: column;
   }
   
   .daddy img {
@@ -1201,6 +1213,17 @@ font-size: 18px;
     height: 300px;
     margin: 10px;
     
+  }
+  .astros img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+
+  .harry img{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
   }
   
   .parrafos{
