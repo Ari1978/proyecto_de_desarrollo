@@ -4,6 +4,29 @@
   box-sizing: border-box;
 }
 
+.float{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(77, 180, 77);
+  bottom: 40px;
+  right: 40px;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 999;
+}
+.fa-whatsapp{
+  font-size: 50px;
+}
+.fa-whatsapp:hover{
+  background-color: rgb(15, 129, 15);
+  transform: scale(1.1, 1.1);
+  border-radius: 50%;
+}
+
+
 /*Tipografia con enlace web*/
 
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&display=swap");
@@ -43,8 +66,9 @@
 }
 
 h4 {
-  color: white;
+  color: rgb(212, 82, 82);
   font-weight: 700;
+  margin: 15px;
 }
 
 .list-menu button {
@@ -61,16 +85,6 @@ h4 {
   color: green;
   transform: scale(1.2, 1.2);
 }
-
-.whats a img {
-  width: 40px;
-  margin-left: 10px;
-}
-
-.whats a img:hover {
-  transform: scale(1.5, 1.5);
-}
-
 .titulo a img {
   width: 250px;
 }
@@ -91,12 +105,12 @@ h4 {
 
 @keyframes h1 {
   0% {
-    opacity: 0;
+    opacity: 1;
+    color: green;
   }
 
   25% {
-    opacity: 1;
-    color: rgb(36, 240, 9);
+    opacity: 0;
   }
 
   50% {
@@ -105,8 +119,7 @@ h4 {
   }
 
   75% {
-    opacity: 1;
-    color: rgb(51, 8, 241);
+    opacity: 0;
   }
 
   100% {
@@ -156,7 +169,7 @@ h4 {
 h2 {
   text-align: center;
   margin-top: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color: white;
   font-weight: 200;
   font-family: "Abril Fatface", serif;
@@ -175,10 +188,16 @@ h2 {
 
 .video1 {
   text-align: center;
+ 
+}
+video{
+  height: 500px;
+  width: auto;
 }
 
 .video2 {
   text-align: center;
+
 }
 
 .centrar-videos h4 {
@@ -223,7 +242,7 @@ h2 {
 .footer-container {
   margin-top: 50px;
   background-color: rgb(17, 16, 16);
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 hr {
@@ -357,7 +376,7 @@ hr {
 .main-shows h2 {
   color: white;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 300px;
   margin-bottom: 100px;
 }
 
@@ -391,7 +410,7 @@ hr {
 }
 
 .div img:hover {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
 }
 
 .pyb button {
@@ -427,13 +446,14 @@ hr {
 
 .pyb a {
   text-decoration: none;
+  color: white;
 }
 
 .footer-shows {
   grid-area: footer-shows;
   margin-top: 150px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /*Contrataciones*/
@@ -458,8 +478,8 @@ hr {
 }
 
 .formu {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 form label {
@@ -467,8 +487,8 @@ form label {
 }
 
 .main-contrata h2 {
-  margin-top: 200px;
-  color: rgb(255, 0, 149);
+  margin-top: 300px;
+  color: rgb(224, 153, 195);
   font-size: 1.5rem;
 }
 
@@ -486,6 +506,9 @@ form label {
 
 .footer-contrata {
   grid-area: footer-contrata;
+  margin-top: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /*nosotros*/
@@ -518,9 +541,9 @@ form label {
 }
 
 .mnosotros h2 {
-  margin-top: 250px;
+  margin-top: 300px;
   margin-bottom: 50px;
-  color: rgb(92, 68, 156);
+  color: rgb(168, 149, 218);
   font-weight: 700;
   text-align: center;
 }
@@ -585,7 +608,7 @@ form label {
 .main-rrhh div h2 {
   font-size: 25px;
   color: white;
-  margin-top: 200px;
+  margin-top: 300px;
   font-weight: 700;
 }
 
@@ -641,7 +664,8 @@ h5 {
 
 .footer-rrhh {
   grid-area: footer-rrhh;
-  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /*daddy mix*/
@@ -670,7 +694,7 @@ h5 {
   color: white;
   text-align: center;
   margin: 30px;
-  margin-top: 400px;
+  margin-top: 300px;
   font-family: fantasy;
 }
 .card1{
@@ -679,13 +703,17 @@ h5 {
   justify-content: center;
   align-items: center;
  margin: 40px;
-}
+ border: 2px solid gray;
+ }
+
+ 
 .card2{
   grid-area: card2;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px;
+ border: 2px solid gray;
 }
 
 .card3{
@@ -693,17 +721,18 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
   margin: 40px;
+ border: 2px solid gray;
 }
 .card4{
   grid-area: card4;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
   margin: 40px;
+ border: 2px solid gray;
 }
+
 .boton{
   grid-area: boton;
   margin-bottom: 50px;
@@ -726,12 +755,26 @@ font-size: 18px;
 
 .footer-daddy{
   grid-area: footer-daddy;
+  margin-left: 200px;
+  margin-right: 200px;
 }
   
 
 .daddy img {
   width: 300px;
-  height: 500;
+  height: 500px;
+  margin: 20px;
+  
+}
+.daddy img:hover{
+  transform: scale(1.1, 1.1);
+}
+.astros img{
+  width: 300px;
+  height: 300px;
+}
+.astros img:hover{
+  transform: scale(1.1, 1.1);
 }
 .parrafos{
   color: white;
@@ -789,6 +832,10 @@ font-size: 18px;
     padding: 10px;
     color: aquamarine;
   }
+  .footer-shows{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
   /*contrataciones*/
 
@@ -800,6 +847,10 @@ font-size: 18px;
   .main-contrata form div p {
     color: rgb(185, 124, 44);
     font-size: 12px;
+  }
+  .footer-contrata{
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   /*nosotros*/
@@ -816,8 +867,8 @@ font-size: 18px;
   }
 
   .imagen img {
-    height: 200px;
-    width: 180px;
+    height: 150px;
+    width: 150px;
     text-align: center;
   }
 
@@ -831,6 +882,10 @@ font-size: 18px;
   .imagen img {
     height: 250px;
     width: 250px;
+  }
+  .nos_footer {
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .footer-p {
@@ -853,9 +908,44 @@ font-size: 18px;
   }
 
   .footer-rrhh {
-    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
+
+  /*daddy mix*/
+
+.daddy-mix {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8 1fr);
+  grid-template-areas:
+    "header-daddy"
+    "main-daddy"
+    "card1" 
+    "card2"
+    "card3" 
+    "card4"
+    "boton"
+    "footer-daddy";
+  background-image: url(../images/fondo\ de\ pantalla.jpg);
 }
+
+.header-daddy{
+  grid-area: header-daddy;
+}
+.main-daddy{
+  grid-area: main-daddy;
+}
+
+
+.footer-daddy{
+  grid-area: footer-daddy;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+}
+
 
 @media only screen and (max-width: 480px) {
   /*inicio*/
@@ -873,7 +963,7 @@ font-size: 18px;
   }
 
   .titulo a img {
-    width: 100px;
+    width: 150px;
   }
 
   .carrusel-img {
@@ -891,12 +981,12 @@ font-size: 18px;
   }
 
   .video1 video {
-    width: 300px;
+    width: 200px;
     height: auto;
   }
 
   .video2 video {
-    width: 300px;
+    width: 200px;
     height: auto;
   }
 
@@ -1016,6 +1106,10 @@ font-size: 18px;
     color: rgb(196, 230, 73);
     font-size: 12px;
   }
+  .formu {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
   /*nosotros*/
 
@@ -1065,6 +1159,7 @@ font-size: 18px;
     font-size: 18px;
     color: rgb(230, 143, 143);
     text-align: center;
+    margin-top: 200px;
   }
 
   .campo input {
@@ -1078,5 +1173,42 @@ font-size: 18px;
 
   .sexo h5 {
     font-size: 15px;
+  }
+
+  /*daddy*/
+
+.main-daddy h1{
+  margin-top: 200px;
+}
+  .card1{
+   margin: 20px;
+   }
+  
+   
+  .card2{
+    margin: 20px;
+  }
+  
+  .card3{
+    margin: 20px;
+  }
+  .card4{
+    margin: 20px;
+  }
+  
+  .daddy img {
+    width: 150px;
+    height: 300px;
+    margin: 10px;
+    
+  }
+  
+  .parrafos{
+    margin: 10px;
+  }
+
+  .footer-daddy{
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
